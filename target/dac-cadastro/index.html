@@ -5,9 +5,9 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
     <body>
-        <h2>Salve o album!</h2>
-        
-        <form action="albuns" method="POST">
+        <h2>Salve um album!</h2>
+        <form action="ControladorDeAlbum" method="POST">
+            <input type="text" name="nome" placeholder="Nome"/>
             <input type="text" name="banda" placeholder="Banda"/>
             <select name="estilo">
                 <option value="Rock">Rock</option>
@@ -15,6 +15,15 @@
                 <option value="Sertanejo">Sertanejo</option>
             </select>
             <input type="date" name="anoDeLancamento" placeholder="Ano de Lançamento"/>
+            <input type="submit" value="Salvar"/>
+        </form>
+        <br/>
+        
+        <h2>Salve uma banda!</h2>
+        <form action="ControladorDeBanda" method="POST">
+            <input type="text" name="nome" placeholder="Nome da banda"/>
+            <input type="text" name="localDeOrigem" placeholder="Local de Origem"/>
+            <input type="date" name="integrantes" placeholder="Integrantes"/>
             <input type="submit" value="Salvar"/>
         </form>
     </body>

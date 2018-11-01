@@ -14,31 +14,26 @@ import java.time.LocalDate;
  */
 public class Album {  
     private int id;
+    private String nome;    
     private Estilo estilo; //Rock, Pop, Sertanejo
-    private Banda banda;
-    private LocalDate anoDeLancamento;
+    private int banda;
+    private String anoDeLancamento;
 
-    public Album(int id, Estilo estilo, Banda banda, LocalDate anoDeLancamento) {
+    
+    public Album(String nome, Estilo estilo, int banda, String anoDeLancamento) {
+        this.nome = nome;
+        this.estilo = estilo;
+        this.banda = banda;
+        this.anoDeLancamento = anoDeLancamento;
+    }
+    
+    public Album(int id, String nome, Estilo estilo, int banda, String anoDeLancamento) {
+        this.nome = nome;
         this.id = id;
         this.estilo = estilo;
         this.banda = banda;
         this.anoDeLancamento = anoDeLancamento;
     }
-
-    public Album(Estilo estilo, Banda banda, LocalDate anoDeLancamento) {
-        this.estilo = estilo;
-        this.banda = banda;
-        this.anoDeLancamento = anoDeLancamento;
-    }
-
-    Album() {
-        
-    }
-
-    public Album(int id, Estilo estilo, String banda, Date anoDeLancamento) {
-        
-    }
-
 
     public int getId() {
         return id;
@@ -48,6 +43,15 @@ public class Album {
         this.id = id;
     }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    
+
     public Estilo getEstilo() {
         return estilo;
     }
@@ -56,19 +60,19 @@ public class Album {
         this.estilo = estilo;
     }
 
-    public Banda getBanda() {
+    public int getBanda() {
         return banda;
     }
 
-    public void setBanda(Banda banda) {
+    public void setBanda(int banda) {
         this.banda = banda;
     }
 
-    public LocalDate getAnoDeLancamento() {
+    public String getAnoDeLancamento() {
         return anoDeLancamento;
     }
 
-    public void setAnoDeLancamento(LocalDate anoDeLancamento) {
+    public void setAnoDeLancamento(String anoDeLancamento) {
         this.anoDeLancamento = anoDeLancamento;
     }
 

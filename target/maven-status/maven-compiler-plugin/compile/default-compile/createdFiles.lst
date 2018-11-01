@@ -3,4 +3,6 @@ br/edu/ifpb/dac/cadastro/domain/Banda.class
 br/edu/ifpb/dac/cadastro/DAO/AlbumDAO.class
 br/edu/ifpb/dac/cadastro/domain/Estilo.class
 br/edu/ifpb/dac/cadastro/domain/ControladorDeAlbum.class
+br/edu/ifpb/dac/cadastro/DAO/BandaDAO.class
 br/edu/ifpb/dac/cadastro/domain/Album.class
+br/edu/ifpb/dac/cadastro/domain/BandaInterface.class

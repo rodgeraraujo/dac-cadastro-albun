@@ -9,8 +9,10 @@ import java.util.List;
 public interface AlbumInterface {
     void novo(Album album);
     
-    Banda buscarBanda(String bandaNome);
+    int buscarBanda(String bandaNome);
     
-    List<Album> listarAlbuns();
+//    List<Album> listarAlbuns();
+    
+    List<Album> todosOsAlbuns();
     
 }

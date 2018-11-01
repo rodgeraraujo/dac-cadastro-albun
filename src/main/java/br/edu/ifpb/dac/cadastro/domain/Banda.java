@@ -15,20 +15,20 @@ public class Banda {
     private int id;
     private String nome;
     private String localDeOrigem;
-    private List<String> integrates;
+    private List<String> integrantes;
 
     public Banda(int id, String nome, String localDeOrigem, List<String> 
-            integrates) {
+            integrantes) {
         this.id = id;
         this.nome = nome;
         this.localDeOrigem = localDeOrigem;
-        this.integrates = integrates;
+        this.integrantes = integrantes;
     }
 
-    public Banda(String nome, String localDeOrigem, List<String> integrates) {
+    public Banda(String nome, String localDeOrigem, List<String> integrantes) {
         this.nome = nome;
         this.localDeOrigem = localDeOrigem;
-        this.integrates = integrates;
+        this.integrantes = integrantes;
     }
 
     public int getId() {
@@ -55,18 +55,18 @@ public class Banda {
         this.localDeOrigem = localDeOrigem;
     }
 
-    public List<String> getIntegrates() {
-        return integrates;
+    public List<String> getIntegrantes() {
+        return integrantes;
     }
 
-    public void setIntegrates(List<String> integrates) {
-        this.integrates = integrates;
+    public void setIntegrantes(List<String> integrantes) {
+        this.integrantes = integrantes;
     }
 
     @Override
     public String toString() {
         return "Banda{" + "id=" + id + ", nome=" + nome + ", localDeOrigem=" + 
-                localDeOrigem + ", integrates=" + integrates + '}';
+                localDeOrigem + ", integrantes=" + integrantes + '}';
     }
 
     
