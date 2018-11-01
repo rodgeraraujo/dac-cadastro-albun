@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h2>Salve o album!</h2>
+        
+        <form action="albuns" method="POST">
+            <input type="text" name="banda" placeholder="Banda"/>
+            <select name="estilo">
+                <option value="Rock">Rock</option>
+                <option value="Pop">Pop</option>
+                <option value="Sertanejo">Sertanejo</option>
+            </select>
+            <input type="date" name="anoDeLancamento" placeholder="Ano de Lançamento"/>
+            <input type="submit" value="Salvar"/>
+        </form>
+    </body>
+</html>
